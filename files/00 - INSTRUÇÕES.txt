@@ -1,0 +1,12 @@
+Baixar o MongoDB:
+
+Escolha a versão em:
+https://www.mongodb.com/try/download/community
+(Nesse projeto foi usada a versão 4.4.2)
+
+Instale escolhento a opção completa e deixando as opções padrão.
+
+Crie o diretório: C:/data/db
+
+Teste os comandos usando o seguinte aplicativo:
+C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe
