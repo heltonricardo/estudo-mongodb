@@ -1,0 +1,29 @@
+use wm
+
+db.estados.find()
+
+db.estados.find().pretty()
+
+db.estados.findOne({sigla: "RJ"})
+
+db.estados.find({sigla: SP}).pretty()
+
+db.estados.find({$or: [{sigla: "RJ"}, {sigla: "AC"}]}).pretty()
+
+db.estados.find({$and: [{sigla: "RJ"}, {sigla: "AC"}]}).pretty()
+
+db.estados.find({populacao: {$exists: true}}).pretty()
+
+db.estados.find().pretty()
+
+db.estados.count()
+
+db.estados.find().skip(2).pretty()
+
+db.estados.find().skip(2).limit(1).pretty()
+
+db.estados.find({sigla: "SP"}, {nome: 1,  sigla: 1})
+
+db.estados.find({sigla: "SP"}, {nome: 1,  sigla: 1, _id: 0})
+
+db.estados.find({sigla: "SP"}, {"cidades.nome": 1, _id: 0})
